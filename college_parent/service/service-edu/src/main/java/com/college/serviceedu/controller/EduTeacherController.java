@@ -28,6 +28,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/serviceedu/edu-teacher")
+@CrossOrigin
 public class EduTeacherController {
     @Autowired
     private EduTeacherService teacherService;
@@ -109,6 +110,9 @@ public class EduTeacherController {
         if (!StringUtils.isEmpty(end)) {
             wrapper.le("gmt_create", end);
         }
+
+        // 根据时间排序
+        wrapper.orderByDesc("gmt_create");
 
         teacherService.page(eduTeacherPage, wrapper);
         long total = eduTeacherPage.getTotal();
