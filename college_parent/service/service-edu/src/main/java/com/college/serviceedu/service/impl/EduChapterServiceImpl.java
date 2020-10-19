@@ -1,6 +1,7 @@
 package com.college.serviceedu.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.college.servicebase.exceptionHandler.MyException;
 import com.college.serviceedu.entity.EduChapter;
 import com.college.serviceedu.entity.EduVideo;
 import com.college.serviceedu.entity.vo.ChapterVo;
@@ -28,6 +29,25 @@ import java.util.List;
 public class EduChapterServiceImpl extends ServiceImpl<EduChapterMapper, EduChapter> implements EduChapterService {
     @Autowired
     private EduVideoService eduVideoService;
+
+    @Override
+    public boolean deleteChapter(String chapterId) {
+        QueryWrapper<EduVideo> wrapper = new QueryWrapper<>();
+        wrapper.eq("chapter_id", chapterId);
+        int num = eduVideoService.count(wrapper);
+        if (num > 0) {
+            throw new MyException(20001, "不能删除");
+        } else {
+            int candelete = baseMapper.deleteById(chapterId);
+            if (candelete > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+
+    }
 
     @Override
     public List<ChapterVo> getChapterVideoByCourseId(String courseId) {

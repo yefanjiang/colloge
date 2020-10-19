@@ -2,7 +2,9 @@ package com.college.serviceedu.controller;
 
 
 import com.college.commonutils.UnifiedResult;
+import com.college.serviceedu.entity.EduCourse;
 import com.college.serviceedu.entity.vo.CourseInfoVo;
+import com.college.serviceedu.entity.vo.CoursePublishVo;
 import com.college.serviceedu.service.EduCourseService;
 import com.college.serviceedu.service.EduSubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +40,21 @@ public class EduCourseController {
     @PostMapping("updateCourseInfo")
     public UnifiedResult updateCourseInfo(@RequestBody CourseInfoVo courseInfoVo) {
         eduCourseService.updateCourseInfo(courseInfoVo);
+        return UnifiedResult.ok();
+    }
+
+    @GetMapping("getPublishCourseInfo/{id}")
+    public UnifiedResult getPublishCourseInfo(@PathVariable String id) {
+        CoursePublishVo coursePublishVo = eduCourseService.publishCourseInfo(id);
+        return UnifiedResult.ok().data("publishCourse", coursePublishVo);
+    }
+
+    @PostMapping("publicCourse/{id}")
+    public UnifiedResult publicCourse(@PathVariable String id) {
+        EduCourse eduCourse = new EduCourse();
+        eduCourse.setId(id);
+        eduCourse.setStatus("Normal");
+        eduCourseService.updateById(eduCourse);
         return UnifiedResult.ok();
     }
 

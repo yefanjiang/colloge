@@ -5,6 +5,7 @@ import com.college.servicebase.exceptionHandler.MyException;
 import com.college.serviceedu.entity.EduCourse;
 import com.college.serviceedu.entity.EduCourseDescription;
 import com.college.serviceedu.entity.vo.CourseInfoVo;
+import com.college.serviceedu.entity.vo.CoursePublishVo;
 import com.college.serviceedu.mapper.EduCourseMapper;
 import com.college.serviceedu.service.EduCourseDescriptionService;
 import com.college.serviceedu.service.EduCourseService;
@@ -74,4 +75,10 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         eduCourseDescription.setDescription(courseInfoVo.getDescription());
         eduCourseDescriptionService.updateById(eduCourseDescription);
     }
+
+    @Override
+    public CoursePublishVo publishCourseInfo(String id) {
+        return baseMapper.getPublishCourseInfo(id);
+    }
+
 }
