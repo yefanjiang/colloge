@@ -1,14 +1,24 @@
 package com.college.serviceedu.controller;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.api.R;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.college.commonutils.UnifiedResult;
 import com.college.serviceedu.entity.EduCourse;
+import com.college.serviceedu.entity.EduTeacher;
 import com.college.serviceedu.entity.vo.CourseInfoVo;
 import com.college.serviceedu.entity.vo.CoursePublishVo;
+import com.college.serviceedu.entity.vo.CourseQuery;
 import com.college.serviceedu.service.EduCourseService;
 import com.college.serviceedu.service.EduSubjectService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -58,6 +68,61 @@ public class EduCourseController {
         return UnifiedResult.ok();
     }
 
+    @GetMapping("getCourseList")
+    public UnifiedResult getCourseList() {
+        List<EduCourse> list = eduCourseService.list(null);
+        return UnifiedResult.ok().data("list", list);
+    }
 
+    @DeleteMapping("deleteCourse/{id}")
+    public UnifiedResult deleteCourse(@PathVariable String id) {
+        eduCourseService.removeCourse(id);
+        return UnifiedResult.ok();
+    }
+
+    @PostMapping("pageQuery/{page}/{limit}")
+    public UnifiedResult pageQuery(@PathVariable long page, @PathVariable long limit,
+                                   @RequestBody(required = false) CourseQuery courseQuery) {
+        Page<EduCourse> pageParam = new Page<>(page, limit);
+        //QueryWrapper<EduCourse> wrapper = new QueryWrapper<>();
+        eduCourseService.pageQuery(pageParam, courseQuery);
+        List<EduCourse> records = pageParam.getRecords();
+
+        long total = pageParam.getTotal();
+
+        return  UnifiedResult.ok().data("total", total).data("rows", records);
+
+//        String title = courseQuery.getTitle();
+//        String teacherId = courseQuery.getTeacherId();
+//        String subjectParentId = courseQuery.getSubjectParentId();
+//        String subjectId = courseQuery.getSubjectId();
+//
+//        if (!StringUtils.isEmpty(title)) {
+//            wrapper.like("title", title);
+//        }
+//
+//        if (!StringUtils.isEmpty(teacherId) ) {
+//            wrapper.eq("teacher_id", teacherId);
+//        }
+//
+//        if (!StringUtils.isEmpty(subjectParentId)) {
+//            wrapper.ge("subject_parent_id", subjectParentId);
+//        }
+//
+//        if (!StringUtils.isEmpty(subjectId)) {
+//            wrapper.ge("subject_id", subjectId);
+//        }
+//
+//        wrapper.orderByDesc("gmt_create");
+//        eduCourseService.page(pageParam, wrapper);
+//
+//        List<EduCourse> records = pageParam.getRecords();
+//        long total = pageParam.getTotal();
+//
+//        Map<String, Object> map = new HashMap<>();
+//        map.put("total", total);
+//        map.put("rows", records);
+//        return UnifiedResult.ok().data(map);
+    }
 }
 

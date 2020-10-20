@@ -1,5 +1,6 @@
 package com.college.serviceedu.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.college.servicebase.exceptionHandler.MyException;
 import com.college.serviceedu.entity.EduVideo;
 import com.college.serviceedu.entity.vo.CoursePublishVo;
@@ -34,5 +35,12 @@ public class EduVideoServiceImpl extends ServiceImpl<EduVideoMapper, EduVideo> i
     public boolean removeVideoById(String id) {
         Integer result = baseMapper.deleteById(id);
         return null != result && result > 0;
+    }
+
+    @Override
+    public void removeVideoByCourseId(String courseId) {
+        QueryWrapper<EduVideo> wrapper = new QueryWrapper<>();
+        wrapper.eq("course_id", courseId);
+        baseMapper.delete(wrapper);
     }
 }

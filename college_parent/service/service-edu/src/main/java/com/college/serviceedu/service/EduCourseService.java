@@ -1,9 +1,11 @@
 package com.college.serviceedu.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.college.serviceedu.entity.EduCourse;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.college.serviceedu.entity.vo.CourseInfoVo;
 import com.college.serviceedu.entity.vo.CoursePublishVo;
+import com.college.serviceedu.entity.vo.CourseQuery;
 
 /**
  * <p>
@@ -23,4 +25,7 @@ public interface EduCourseService extends IService<EduCourse> {
 
     CoursePublishVo publishCourseInfo(String id);
 
+    void removeCourse(String id);
+
+    void pageQuery(Page<EduCourse> pageParam, CourseQuery courseQuery);
 }
