@@ -1,13 +1,18 @@
 package com.college.serviceedu.controller;
 
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.api.R;
 import com.college.commonutils.UnifiedResult;
+import com.college.serviceedu.client.VodClient;
 import com.college.serviceedu.entity.EduVideo;
 import com.college.serviceedu.entity.vo.CoursePublishVo;
 import com.college.serviceedu.service.EduVideoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.prefs.BackingStoreException;
 
 /**
  * <p>
