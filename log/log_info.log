@@ -540,3 +540,244 @@
 2020-10-21 15:19:04.271 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
 2020-10-21 15:19:04.272 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3703 ms
 2020-10-21 15:19:04.641 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-22 16:05:50.673 [main] INFO  com.college.serviceedu.EduApplication - The following profiles are active: dev
+2020-10-22 16:05:52.207 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 16:05:52.211 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-22 16:05:52.260 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2020-10-22 16:05:52.684 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=39feeb82-f1b6-3244-baaa-6727f264161b
+2020-10-22 16:05:52.998 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 16:05:53.249 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 16:05:54.022 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-22 16:05:54.032 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-10-22 16:05:54.032 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-22 16:05:54.033 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-10-22 16:05:54.221 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-22 16:05:54.222 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3427 ms
+2020-10-22 16:05:54.562 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-22 16:05:55.439 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-22 16:05:56.895 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-22 16:05:56.933 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 16:05:56.950 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 16:05:57.112 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 16:05:58.628 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-10-22 16:05:59.755 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-22 16:05:59.803 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-22 16:05:59.868 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-22 16:06:00.216 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-10-22 16:06:00.251 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-10-22 16:06:02.859 [main] INFO  com.college.serviceedu.EduApplication - Started EduApplication in 15.494 seconds (JVM running for 16.379)
+2020-10-22 16:12:13.929 [main] INFO  com.college.serviceedu.EduApplication - The following profiles are active: dev
+2020-10-22 16:12:15.483 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 16:12:15.492 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-22 16:12:15.557 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2020-10-22 16:12:16.147 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=39feeb82-f1b6-3244-baaa-6727f264161b
+2020-10-22 16:12:16.522 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 16:12:16.825 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 16:12:17.554 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-22 16:12:17.567 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-10-22 16:12:17.568 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-22 16:12:17.568 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-10-22 16:12:17.827 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-22 16:12:17.827 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3876 ms
+2020-10-22 16:12:18.226 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-22 16:12:19.352 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-22 16:12:20.701 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-22 16:12:20.731 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 16:12:20.740 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 16:12:20.940 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 16:12:22.817 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-10-22 16:12:24.001 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-22 16:12:24.044 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-22 16:12:24.175 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-22 16:12:24.727 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-10-22 16:12:24.764 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-10-22 16:12:27.364 [main] INFO  com.college.serviceedu.EduApplication - Started EduApplication in 16.277 seconds (JVM running for 17.179)
+2020-10-22 16:12:33.550 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-22 16:12:33.550 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-22 16:12:33.562 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-10-22 16:16:17.575 [main] INFO  com.college.serviceedu.EduApplication - The following profiles are active: dev
+2020-10-22 16:16:18.567 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 16:16:18.572 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-22 16:16:18.617 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-10-22 16:16:18.951 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=39feeb82-f1b6-3244-baaa-6727f264161b
+2020-10-22 16:16:19.210 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 16:16:19.411 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 16:16:20.138 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-22 16:16:20.153 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-10-22 16:16:20.154 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-22 16:16:20.155 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-10-22 16:16:20.354 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-22 16:16:20.355 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2760 ms
+2020-10-22 16:16:20.667 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-22 16:16:21.461 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-22 16:16:22.689 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-22 16:16:22.738 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 16:16:22.747 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 16:16:22.885 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 16:16:24.483 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-10-22 16:16:25.953 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-22 16:16:25.985 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-22 16:16:26.099 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-22 16:16:26.648 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-10-22 16:16:26.686 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-10-22 16:16:26.836 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-edu 192.168.104.113:8001 register finished
+2020-10-22 16:16:27.391 [main] INFO  com.college.serviceedu.EduApplication - Started EduApplication in 12.059 seconds (JVM running for 12.824)
+2020-10-22 16:16:48.566 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-22 16:16:48.567 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-22 16:16:48.582 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2020-10-22 17:42:09.002 [main] INFO  com.college.serviceedu.EduApplication - The following profiles are active: dev
+2020-10-22 17:42:29.654 [main] INFO  com.college.serviceedu.EduApplication - The following profiles are active: dev
+2020-10-22 17:42:32.065 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 17:42:32.078 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-22 17:42:32.163 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48ms. Found 0 repository interfaces.
+2020-10-22 17:42:32.851 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=917b8486-bd3f-33d7-8fdc-a85d87b4205e
+2020-10-22 17:42:33.423 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 17:42:33.854 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.college.servicebase.config.RedisConfig$$EnhancerBySpringCGLIB$$22828108] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 17:42:33.952 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 17:42:35.545 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-22 17:42:35.573 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-10-22 17:42:35.574 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-22 17:42:35.575 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-10-22 17:42:36.021 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-22 17:42:36.022 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6335 ms
+2020-10-22 17:42:36.857 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-22 17:42:38.085 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-22 17:42:42.136 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-22 17:42:42.264 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 17:42:42.276 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 17:42:43.115 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 17:42:44.287 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-10-22 17:42:45.427 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-22 17:42:45.458 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-22 17:42:45.505 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-22 17:42:45.941 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-10-22 17:42:45.998 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-10-22 17:42:46.248 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-edu 192.168.104.113:8001 register finished
+2020-10-22 17:42:47.265 [main] INFO  com.college.serviceedu.EduApplication - Started EduApplication in 21.866 seconds (JVM running for 23.308)
+2020-10-22 17:44:02.736 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-22 17:44:02.738 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-22 17:44:02.765 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 27 ms
+2020-10-22 19:29:37.214 [main] INFO  com.college.serviceedu.EduApplication - The following profiles are active: dev
+2020-10-22 19:29:38.199 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 19:29:38.203 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-22 19:29:38.246 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 repository interfaces.
+2020-10-22 19:29:38.645 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=917b8486-bd3f-33d7-8fdc-a85d87b4205e
+2020-10-22 19:29:38.892 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 19:29:39.054 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.college.servicebase.config.RedisConfig$$EnhancerBySpringCGLIB$$5cc1cca2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 19:29:39.087 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 19:29:39.927 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-22 19:29:39.939 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-10-22 19:29:39.940 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-22 19:29:39.940 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-10-22 19:29:40.115 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-22 19:29:40.116 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2881 ms
+2020-10-22 19:29:40.479 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-22 19:29:41.484 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-22 19:29:43.501 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-22 19:29:43.533 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 19:29:43.545 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 19:29:43.808 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 19:29:45.145 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-10-22 19:29:46.538 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-22 19:29:46.578 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-22 19:29:46.631 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-22 19:29:47.060 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-10-22 19:29:47.095 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-10-22 19:29:47.248 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-edu 192.168.104.113:8001 register finished
+2020-10-22 19:29:47.906 [main] INFO  com.college.serviceedu.EduApplication - Started EduApplication in 13.297 seconds (JVM running for 14.22)
+2020-10-22 19:31:17.551 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-22 19:31:17.552 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-22 19:31:17.572 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2020-10-22 19:52:03.372 [main] INFO  com.college.serviceedu.EduApplication - The following profiles are active: dev
+2020-10-22 19:52:05.763 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 19:52:05.777 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-22 19:52:05.865 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48ms. Found 0 repository interfaces.
+2020-10-22 19:52:06.712 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=917b8486-bd3f-33d7-8fdc-a85d87b4205e
+2020-10-22 19:52:07.423 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 19:52:08.112 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.college.servicebase.config.RedisConfig$$EnhancerBySpringCGLIB$$ca67899a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 19:52:08.266 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 19:52:10.722 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-22 19:52:10.791 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-10-22 19:52:10.794 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-22 19:52:10.796 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-10-22 19:52:11.327 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-22 19:52:11.328 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 7933 ms
+2020-10-22 19:52:12.748 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-22 19:52:14.737 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-22 19:52:18.715 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-22 19:52:18.813 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 19:52:18.836 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 19:52:19.231 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 19:52:21.931 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-10-22 19:52:24.505 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-22 19:52:24.768 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-22 19:52:24.907 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-22 19:52:25.817 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-10-22 19:52:25.897 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-10-22 19:52:26.000 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-edu 192.168.104.113:8001 register finished
+2020-10-22 19:52:28.302 [main] INFO  com.college.serviceedu.EduApplication - Started EduApplication in 28.743 seconds (JVM running for 29.712)
+2020-10-22 19:52:36.484 [http-nio-8001-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-22 19:52:36.485 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-22 19:52:36.496 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-10-22 20:12:19.572 [main] INFO  com.college.serviceedu.EduApplication - The following profiles are active: dev
+2020-10-22 20:12:22.041 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 20:12:22.048 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-22 20:12:22.106 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+2020-10-22 20:12:22.730 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=917b8486-bd3f-33d7-8fdc-a85d87b4205e
+2020-10-22 20:12:23.274 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 20:12:23.563 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.college.servicebase.config.RedisConfig$$EnhancerBySpringCGLIB$$70002abd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 20:12:23.622 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 20:12:25.188 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-22 20:12:25.206 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-10-22 20:12:25.207 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-22 20:12:25.208 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-10-22 20:12:25.573 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-22 20:12:25.575 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5951 ms
+2020-10-22 20:12:26.880 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-22 20:12:28.612 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-22 20:12:33.185 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-22 20:12:33.240 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 20:12:33.251 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 20:12:33.470 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 20:12:35.243 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-10-22 20:12:36.953 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-22 20:12:37.008 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-22 20:12:37.076 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-22 20:12:38.119 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-10-22 20:12:38.258 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-10-22 20:12:38.316 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-edu 192.168.104.113:8001 register finished
+2020-10-22 20:12:39.370 [main] INFO  com.college.serviceedu.EduApplication - Started EduApplication in 24.493 seconds (JVM running for 25.812)
+2020-10-22 20:13:08.055 [http-nio-8001-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-22 20:13:08.056 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-22 20:13:08.070 [http-nio-8001-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2020-10-22 20:37:51.073 [main] INFO  com.college.serviceedu.EduApplication - The following profiles are active: dev
+2020-10-22 20:37:54.020 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-22 20:37:54.074 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-22 20:37:54.386 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68ms. Found 0 repository interfaces.
+2020-10-22 20:37:55.149 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=917b8486-bd3f-33d7-8fdc-a85d87b4205e
+2020-10-22 20:37:56.063 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 20:37:57.087 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.college.servicebase.config.RedisConfig$$EnhancerBySpringCGLIB$$85421bdd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 20:37:57.355 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-22 20:37:59.137 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8001 (http)
+2020-10-22 20:37:59.153 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8001"]
+2020-10-22 20:37:59.154 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-22 20:37:59.155 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-10-22 20:37:59.459 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-22 20:37:59.459 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8356 ms
+2020-10-22 20:37:59.855 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-22 20:38:01.128 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-22 20:38:05.482 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-22 20:38:05.515 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 20:38:05.525 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-10-22 20:38:05.743 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-22 20:38:08.706 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService
+2020-10-22 20:38:11.507 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-22 20:38:11.558 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-22 20:38:11.607 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-22 20:38:12.191 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8001"]
+2020-10-22 20:38:12.235 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8001 (http) with context path ''
+2020-10-22 20:38:12.255 [main] INFO  o.s.c.alibaba.nacos.registry.NacosServiceRegistry - nacos registry, service-edu 192.168.104.113:8001 register finished
+2020-10-22 20:38:13.140 [main] INFO  com.college.serviceedu.EduApplication - Started EduApplication in 27.488 seconds (JVM running for 28.706)
+2020-10-22 20:38:43.484 [http-nio-8001-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-22 20:38:43.495 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-22 20:38:43.536 [http-nio-8001-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 36 ms
