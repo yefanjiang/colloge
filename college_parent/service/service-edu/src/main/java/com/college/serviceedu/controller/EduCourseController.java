@@ -92,37 +92,6 @@ public class EduCourseController {
 
         return  UnifiedResult.ok().data("total", total).data("rows", records);
 
-//        String title = courseQuery.getTitle();
-//        String teacherId = courseQuery.getTeacherId();
-//        String subjectParentId = courseQuery.getSubjectParentId();
-//        String subjectId = courseQuery.getSubjectId();
-//
-//        if (!StringUtils.isEmpty(title)) {
-//            wrapper.like("title", title);
-//        }
-//
-//        if (!StringUtils.isEmpty(teacherId) ) {
-//            wrapper.eq("teacher_id", teacherId);
-//        }
-//
-//        if (!StringUtils.isEmpty(subjectParentId)) {
-//            wrapper.ge("subject_parent_id", subjectParentId);
-//        }
-//
-//        if (!StringUtils.isEmpty(subjectId)) {
-//            wrapper.ge("subject_id", subjectId);
-//        }
-//
-//        wrapper.orderByDesc("gmt_create");
-//        eduCourseService.page(pageParam, wrapper);
-//
-//        List<EduCourse> records = pageParam.getRecords();
-//        long total = pageParam.getTotal();
-//
-//        Map<String, Object> map = new HashMap<>();
-//        map.put("total", total);
-//        map.put("rows", records);
-//        return UnifiedResult.ok().data(map);
     }
 }
 

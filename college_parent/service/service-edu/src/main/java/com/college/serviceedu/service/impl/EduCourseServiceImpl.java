@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.college.servicebase.exceptionHandler.MyException;
 import com.college.serviceedu.entity.EduCourse;
 import com.college.serviceedu.entity.EduCourseDescription;
+import com.college.serviceedu.entity.frontvo.CourseFrontVo;
 import com.college.serviceedu.entity.vo.CourseInfoVo;
 import com.college.serviceedu.entity.vo.CoursePublishVo;
 import com.college.serviceedu.entity.vo.CourseQuery;
@@ -19,6 +20,10 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -148,5 +153,50 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         }
 
         baseMapper.selectPage(pageParam, wrapper);
+    }
+
+    @Override
+    public Map<String, Object> getCourseFrontList(Page<EduCourse> eduTeacherPage, CourseFrontVo courseFrontVo) {
+        QueryWrapper<EduCourse> wrapper = new QueryWrapper<>();
+        if (!StringUtils.isEmpty(courseFrontVo.getSubjectParentId())) {
+            wrapper.eq("subject_parent_id", courseFrontVo.getSubjectParentId());
+        }
+
+        if (!StringUtils.isEmpty(courseFrontVo.getSubjectId())) {
+            wrapper.eq("subject_id", courseFrontVo.getSubjectId());
+        }
+
+        if (!StringUtils.isEmpty(courseFrontVo.getBuyCountSort())) {
+            wrapper.orderByDesc("buy_count");
+        }
+
+        if (!StringUtils.isEmpty(courseFrontVo.getGmtCreateSort())) {
+            wrapper.orderByDesc("gmt_create");
+        }
+
+        if (!StringUtils.isEmpty(courseFrontVo.getPriceSort())) {
+            wrapper.orderByDesc("price");
+        }
+
+        baseMapper.selectPage(eduTeacherPage, wrapper);
+
+        List<EduCourse> records = eduTeacherPage.getRecords();
+        long current = eduTeacherPage.getCurrent();
+        long pages = eduTeacherPage.getPages();
+        long size = eduTeacherPage.getSize();
+        long total = eduTeacherPage.getTotal();
+        boolean hasNext = eduTeacherPage.hasNext();
+        boolean hasPrevious = eduTeacherPage.hasPrevious();
+
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("items", records);
+        map.put("current", current);
+        map.put("pages", pages);
+        map.put("size", size);
+        map.put("total", total);
+        map.put("hasNext", hasNext);
+        map.put("hasPrevious", hasPrevious);
+
+        return map;
     }
 }

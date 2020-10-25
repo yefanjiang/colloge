@@ -3,9 +3,12 @@ package com.college.serviceedu.service;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.college.serviceedu.entity.EduCourse;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.college.serviceedu.entity.frontvo.CourseFrontVo;
 import com.college.serviceedu.entity.vo.CourseInfoVo;
 import com.college.serviceedu.entity.vo.CoursePublishVo;
 import com.college.serviceedu.entity.vo.CourseQuery;
+
+import java.util.Map;
 
 /**
  * <p>
@@ -28,4 +31,6 @@ public interface EduCourseService extends IService<EduCourse> {
     void removeCourse(String id);
 
     void pageQuery(Page<EduCourse> pageParam, CourseQuery courseQuery);
+
+    Map<String, Object> getCourseFrontList(Page<EduCourse> eduTeacherPage, CourseFrontVo courseFrontVo);
 }
