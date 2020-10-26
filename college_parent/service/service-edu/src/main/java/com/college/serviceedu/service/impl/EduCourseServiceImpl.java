@@ -7,6 +7,7 @@ import com.college.servicebase.exceptionHandler.MyException;
 import com.college.serviceedu.entity.EduCourse;
 import com.college.serviceedu.entity.EduCourseDescription;
 import com.college.serviceedu.entity.frontvo.CourseFrontVo;
+import com.college.serviceedu.entity.frontvo.CourseWebVo;
 import com.college.serviceedu.entity.vo.CourseInfoVo;
 import com.college.serviceedu.entity.vo.CoursePublishVo;
 import com.college.serviceedu.entity.vo.CourseQuery;
@@ -198,5 +199,10 @@ public class EduCourseServiceImpl extends ServiceImpl<EduCourseMapper, EduCourse
         map.put("hasPrevious", hasPrevious);
 
         return map;
+    }
+
+    @Override
+    public CourseWebVo getBaseCourseInfo(String courseId) {
+        return baseMapper.getBaseCourseInfo(courseId);
     }
 }

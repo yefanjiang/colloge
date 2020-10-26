@@ -1,7 +1,12 @@
 package com.college.vod.controller;
 
 import com.aliyuncs.DefaultAcsClient;
+import com.aliyuncs.exceptions.ClientException;
+import com.aliyuncs.exceptions.ServerException;
 import com.aliyuncs.vod.model.v20170321.DeleteVideoRequest;
+import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthRequest;
+import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthResponse;
+import com.baomidou.mybatisplus.extension.api.R;
 import com.college.commonutils.UnifiedResult;
 import com.college.servicebase.exceptionHandler.MyException;
 import com.college.vod.service.VodService;
@@ -45,6 +50,32 @@ public class VodController {
     public UnifiedResult removeVideoList(@RequestParam("videoList") List<String> videoIdList) {
         vodService.removeVideoList(videoIdList);
         return UnifiedResult.ok().message("删除成功");
+    }
+
+    @GetMapping("getPlayAuth/{id}")
+    public UnifiedResult getPlayAuth(@PathVariable String id) {
+
+        try  {
+            DefaultAcsClient client = InitObject.initVodClient(ConstantPropertiesUtil.ACCESS_KEY_ID,
+                    ConstantPropertiesUtil.ACCESS_KEY_SECRET);
+
+            //请求
+            GetVideoPlayAuthRequest request = new GetVideoPlayAuthRequest();
+            request.setVideoId(id);
+
+            //响应
+            GetVideoPlayAuthResponse response = client.getAcsResponse(request);
+
+            //得到播放凭证
+            String playAuth = response.getPlayAuth();
+
+            //返回结果
+            return UnifiedResult.ok().message("获取凭证成功").data("playAuth", playAuth);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new MyException(20001, "获取凭证失败");
+        }
+
     }
 
 }
