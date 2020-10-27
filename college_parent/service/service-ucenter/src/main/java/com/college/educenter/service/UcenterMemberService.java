@@ -17,4 +17,6 @@ public interface UcenterMemberService extends IService<UcenterMember> {
     String login(UcenterMember ucenterMember);
 
     void register(RegisterVo registerVo);
+
+    Integer countRegister(String day);
 }
