@@ -45,19 +45,19 @@ import org.springframework.web.util.pattern.PathPatternParser;
  * @author wangpeng
  * @date 2019/01/02
  */
-//@Configuration
-//public class CorsConfig {
-//    @Bean
-//    public CorsWebFilter corsFilter() {
-//        CorsConfiguration config = new CorsConfiguration();
-//        config.addAllowedMethod("*");
-//        config.addAllowedOrigin("*");
-//        config.addAllowedHeader("*");
-//
-//        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource(new PathPatternParser());
-//        source.registerCorsConfiguration("/**", config);
-//
-//        return new CorsWebFilter(source);
-//    }
-//}
+@Configuration
+public class CorsConfig {
+    @Bean
+    public CorsWebFilter corsFilter() {
+        CorsConfiguration config = new CorsConfiguration();
+        config.addAllowedMethod("*");
+        config.addAllowedOrigin("*");
+        config.addAllowedHeader("*");
+
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource(new PathPatternParser());
+        source.registerCorsConfiguration("/**", config);
+
+        return new CorsWebFilter(source);
+    }
+}
 

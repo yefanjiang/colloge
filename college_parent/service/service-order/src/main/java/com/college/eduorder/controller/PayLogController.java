@@ -20,7 +20,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/eduorder/pay-log")
-@CrossOrigin
+//@CrossOrigin
 public class PayLogController {
 
     @Autowired

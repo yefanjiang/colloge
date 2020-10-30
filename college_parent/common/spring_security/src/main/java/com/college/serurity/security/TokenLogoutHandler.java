@@ -1,6 +1,5 @@
 package com.college.serurity.security;
 
-
 import com.college.commonutils.ResponseUtil;
 import com.college.commonutils.UnifiedResult;
 import org.springframework.data.redis.core.RedisTemplate;

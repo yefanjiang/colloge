@@ -24,7 +24,7 @@ import java.util.prefs.BackingStoreException;
  */
 @RestController
 @RequestMapping("/serviceedu/edu-video")
-@CrossOrigin
+//@CrossOrigin
 public class EduVideoController {
     @Autowired
     private EduVideoService eduVideoService;
