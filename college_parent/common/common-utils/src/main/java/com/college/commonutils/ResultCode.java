@@ -2,6 +2,7 @@ package com.college.commonutils;
 
 /**
  * @author winte
+ * 枚举类，定义两个状态码
  *
  */
 public enum ResultCode {

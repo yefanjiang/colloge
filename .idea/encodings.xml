@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/college_parent/canal_clientedu/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/college_parent/common/common-utils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/college_parent/common/service_base/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/college_parent/common/spring_security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/college_parent/infrastructure/api_gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/college_parent/service/service-acl/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/college_parent/service/service-cms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/college_parent/service/service-edu/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/college_parent/service/service-msm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/college_parent/service/service-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/college_parent/service/service-oss/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/college_parent/service/service-statistics/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/college_parent/service/service-ucenter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/college_parent/service/service-vod/src/main/java" charset="UTF-8" />
+  </component>
+</project>

@@ -1,8 +1,0 @@
-2020-10-18 13:48:00.693 [Finalizer] WARN  com.alibaba.excel.ExcelReader - Destroy object failed
-java.lang.NullPointerException: null
-	at com.alibaba.excel.ExcelReader.finish(ExcelReader.java:277)
-	at com.alibaba.excel.ExcelReader.finalize(ExcelReader.java:287)
-	at java.lang.System$2.invokeFinalize(System.java:1270)
-	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:102)
-	at java.lang.ref.Finalizer.access$100(Finalizer.java:34)
-	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:217)

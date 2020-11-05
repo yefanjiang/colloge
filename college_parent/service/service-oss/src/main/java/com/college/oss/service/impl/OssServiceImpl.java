@@ -18,7 +18,7 @@ public class OssServiceImpl implements OssService {
 
     /**
      * @param file
-     * @return
+     * @return url
      * 上传头像到OSS
      */
     @Override

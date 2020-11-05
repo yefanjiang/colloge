@@ -1,6 +1,5 @@
 package com.college.commonutils;
 
-import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.util.HashMap;

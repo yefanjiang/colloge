@@ -44,7 +44,6 @@ public class VodServiceImpl implements VodService {
             String videoId = response.getVideoId();
             if (!response.isSuccess()) {
                 String errorMessage = "阿里云上传错误：" + "code：" + response.getCode() + ", message：" + response.getMessage();
-                //log.warn(errorMessage);
                 if(StringUtils.isEmpty(videoId)){
                     throw new MyException(20001, errorMessage);
                 }

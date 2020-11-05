@@ -58,7 +58,7 @@ public class EduChapterController {
     }
 
     /**
-     * 要考虑章节中有没有小结的问题
+     * 要考虑章节中有没有小节的问题
      * @param chapterId
      * @return
      */
